@@ -6,11 +6,11 @@ import Comentario from './Comentario'
 const App = () => {
     return (
         <div className="ui container comments">
-        <Comentario />
-        <Comentario />
-        <Comentario />
-        <Comentario />
-        <Comentario />
+        <Comentario author="Alex"/>
+        <Comentario author="Jovanni"/>
+        <Comentario author="Edgar"/>
+        <Comentario author="Israel"/>
+        <Comentario author="Ramses"/>
 
         </div>
     )
