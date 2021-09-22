@@ -6,7 +6,7 @@ const Comentario = props =>{
     return (
         <div className="comment">
                 <a href="/" className="avatar">
-                    <img alt="imagen avatar" src={faker.image.avatar()} />
+                    <img alt="imagen avatar" src={props.img} />
                 </a>
                 <div className="content">
                     <a href="/" className="author">
@@ -14,10 +14,12 @@ const Comentario = props =>{
                     </a>
                     <div className="metadata">
                         <span className="date">
-                            hace 1 minuto
+                            {props.timeAgo}
                         </span>
                     </div>
-                    <div className="text">Me gusto mucho el blog</div>
+                    <div className="text">
+                        {props.comment}
+                        </div>
                 </div>
             </div>
     )
